@@ -17,7 +17,7 @@ X[:,1:3] = imputer.fit_transform(X[:,1:3])
 #labeling
 labelencoder = LabelEncoder()
 X[:,0] = labelencoder.fit_transform(X[:,0])
-
+#print(X)
 y = labelencoder.fit_transform(y)
 
 onehotencoder = OneHotEncoder(categorical_features=[0])
